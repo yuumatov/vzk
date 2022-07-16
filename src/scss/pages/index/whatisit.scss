@@ -1,0 +1,195 @@
+.whatisit {
+  width: 100%;
+  padding-bottom: 60px;
+  padding-top: 128px;
+  position: relative;
+  background-image: url('./../img/fons/whatisit-full.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-top: -65px;
+
+  @include media-max(1440px) {
+    background-image: none;
+    box-shadow: 0px -30px 30px rgba(105, 41, 142, 0.11);
+    margin-top: 0;
+    padding-top: 68px;
+  }
+
+  @include media-max($phablet) {
+    padding-top: 40px;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__img {
+    margin-right: 70px;
+
+    @include media-max($tablet) {
+      display: none;
+    }
+  }
+
+  &__content {
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $c-accent;
+    margin-bottom: 30px;
+
+    @include media-max($tablet) {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 24px;
+    }
+
+    @include media-max($phablet) {
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__desc {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    color: $c-black;
+    margin-bottom: 30px;
+
+    @include media-max($phablet) {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__tabs {
+    .ui-tabs-nav {
+      padding: 0;
+      margin-bottom: 40px;
+      margin-top: -8px;
+      margin-left: -8px;
+
+      @include media-max($tablet) {
+        margin-bottom: 30px;
+      }
+
+      @include media-max($phablet) {
+        margin-top: -4px;
+        margin-left: -4px;
+        margin-bottom: 14px;
+      }
+    }
+
+    li {
+      &.ui-tabs-active {
+        .whatisit__tabs-button {
+          border: 1px solid rgba(#8330B3, 1);
+          background-color: darken(#EDEAF6, 5%);
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  &__tabs-title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: $c-black;
+    margin-bottom: 20px;
+
+    @include media-max($tablet) {
+      margin-bottom: 24px;
+      font-size: 24px;
+      line-height: 40px;
+    }
+
+    @include media-max($phablet) {
+      font-size: 13px;
+      line-height: 20px;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__tabs-button {
+    background-color: #EDEAF6;
+    border: 1px solid rgba(#8330B3, 0.5);
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    color: $c-black;
+    transition: background-color $t-base;
+
+    &:hover {
+      background-color: darken(#EDEAF6, 5%);
+    }
+
+    @include media-max($tablet) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @include media-max($phablet) {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 5px 22px;
+    }
+  }
+
+  &__tabs-content {
+    padding: 0;
+
+    p {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 37px;
+      color: $c-black;
+
+      @include media-max($tablet) {
+        font-size: 24px;
+        line-height: 40px;
+      }
+
+      @include media-max($phablet) {
+        font-size: 13px;
+        line-height: 20px;
+      }
+    }
+
+    &.ui-tabs-panel {
+      padding: 0;
+    }
+  }
+}
+
+.ui-tabs .ui-tabs-nav li {
+  margin: 8px;
+
+  @include media-max($phablet) {
+    margin: 4px;
+  }
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: 8px;
+  padding-bottom: 0;
+
+  @include media-max($phablet) {
+    margin-bottom: 4px;
+    padding-bottom: 0;
+  }
+}

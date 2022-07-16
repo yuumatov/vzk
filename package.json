@@ -1,0 +1,49 @@
+{
+  "name": "indeed-en",
+  "version": "1.0.0",
+  "description": "Проект indeed-en",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build --production",
+    "zip": "gulp zip --production",
+    "ftp": "gulp ftp --production",
+    "ftpcss": "gulp ftpcss --production"
+  },
+  "author": "Yuumatov",
+  "license": "ISC",
+  "devDependencies": {
+    "@popperjs/core": "^2.11.5",
+    "air-datepicker": "^3.2.0",
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-file-include": "latest",
+    "gulp-fonter": "latest",
+    "gulp-group-css-media-queries": "latest",
+    "gulp-if": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-newer": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-sass": "latest",
+    "gulp-svg-sprite": "latest",
+    "gulp-ttf2woff2": "latest",
+    "gulp-typograf": "latest",
+    "gulp-util": "latest",
+    "gulp-version-number": "latest",
+    "gulp-webp": "latest",
+    "gulp-zip": "latest",
+    "sass": "latest",
+    "vinyl-ftp": "latest",
+    "webpack": "latest",
+    "webpack-stream": "latest"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "wow.js": "^1.2.2"
+  }
+}

@@ -1,0 +1,200 @@
+.base-card {
+    margin-bottom: 100px;
+    background-color: $c-white;
+    margin-top: 40px;
+    position: relative;
+
+    @include media-max($phablet) {
+        margin-bottom: 40px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 40px;
+
+        @include media-max($tablet) {
+            grid-template-columns: 100%;
+        }
+
+        @include media-max($phablet) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        @include media-max(600px) {
+            grid-template-columns: 100%;
+        }
+    }
+
+    &__item {
+        position: relative;
+        border-radius: 30px;
+        min-height: 352px;
+        padding: 62px 44px;
+        overflow: hidden;
+        transition: background-color $t-base;
+
+        &:hover {
+            & > img {
+                transform: scale(0.9);
+            }
+        }
+
+        @include media-max($tablet) {
+            padding: 70px;
+            min-height: 395px;
+        }
+
+        @include media-max($phablet) {
+            padding: 36px 16px;
+            border-radius: 16px;
+            min-height: 266px;
+        }
+
+        @include media-max(600px) {
+            min-height: 180px;
+        }
+
+        @include media-max(440px) {
+            min-height: 266px;
+        }
+
+        &:nth-child(1) {
+            background-color: #F6EBFF;
+
+            &:hover {
+                background-color: darken(#F6EBFF, 5%);
+            }
+
+            & > img {
+                width: 274px;
+                right: 0;
+                bottom: 40px;
+
+                @include media-max($tablet) {
+                    width: 352px;
+                    bottom: 60px;
+                }
+
+                @include media-max(959px) {
+                    width: 190px;
+                }
+
+                @include media-max($phablet) {
+                    bottom: 5px;
+                    right: -28px;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            background-color: #F9F9FA;
+
+            &:hover {
+                background-color: darken(#F9F9FA, 5%);
+            }
+
+            & > img {
+                width: 166px;
+                top: -30px;
+                right: 40px;
+
+                @include media-max($tablet) {
+                    width: 220px;
+                    right: 60px;
+                    top: -60px;
+                }
+
+                @include media-max(959px) {
+                    width: 132px;
+                    top: 0px;
+                    right: 10px;
+                }
+
+                @include media-max($phablet) {
+                    right: 2px;
+                    top: -36px;
+                }
+
+                @include media-max(600px) {
+                    right: 36px;
+                    width: 90px;
+                }
+
+                @include media-max(440px) {
+                    width: 132px;
+                    right: 2px;
+                    top: -36px;
+                }
+            }
+        }
+
+        & > img {
+            transition: transform $t-base;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $c-black;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+
+        @include media-max($tablet) {
+            font-size: 25px;
+            line-height: 34px;
+            margin-bottom: 18px;
+        }
+
+        @include media-max($phablet) {
+            max-width: 135px;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 14px;
+        }
+
+        @include media-max(600px) {
+            max-width: 100%;
+        }
+    }
+
+    &__desc {
+        max-width: 300px;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 35px;
+        color: $c-black;
+        position: relative;
+        z-index: 1;
+
+        @include media-max($tablet) {
+            max-width: 380px;
+            font-size: 24px;
+            line-height: 43px;
+        }
+
+        @include media-max($phablet) {
+            font-size: 13px;
+            line-height: 22px;
+            max-width: 125px;
+        }
+
+        @include media-max(600px) {
+            max-width: 280px;
+        }
+
+        @include media-max(440px) {
+            max-width: 125px;
+        }
+    }
+
+    &__item-img {
+        position: absolute;
+    }
+}

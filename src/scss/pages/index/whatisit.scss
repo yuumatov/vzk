@@ -54,6 +54,12 @@
     }
 
     @include media-max($phablet) {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
+    @include media-max($mobile) {
       font-size: 14px;
       line-height: 17px;
       margin-bottom: 10px;
@@ -68,9 +74,14 @@
     margin-bottom: 30px;
 
     @include media-max($phablet) {
-      font-size: 16px;
+      font-size: 20px;
       line-height: 26px;
       margin-bottom: 20px;
+    }
+
+    @include media-max($mobile) {
+      font-size: 16px;
+      line-height: 26px;
     }
   }
 
@@ -117,9 +128,14 @@
     }
 
     @include media-max($phablet) {
-      font-size: 13px;
-      line-height: 20px;
+      font-size: 18px;
+      line-height: 24px;
       margin-bottom: 14px;
+    }
+
+    @include media-max($mobile) {
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 
@@ -144,6 +160,12 @@
     }
 
     @include media-max($phablet) {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 8px 22px;
+    }
+
+    @include media-max($mobile) {
       font-size: 12px;
       line-height: 14px;
       padding: 5px 22px;
@@ -165,7 +187,12 @@
       }
 
       @include media-max($phablet) {
-        font-size: 13px;
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      @include media-max($mobile) {
+        font-size: 14px;
         line-height: 20px;
       }
     }
@@ -174,6 +201,10 @@
       padding: 0;
     }
   }
+}
+
+.ui-tabs {
+  padding: 0;
 }
 
 .ui-tabs .ui-tabs-nav li {

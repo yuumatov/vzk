@@ -18,31 +18,21 @@
   }
 
   @include media-max($phablet) {
-    padding-top: 77px;
+    padding-top: 100px;
     height: 600px;
-    background-size: 1400px;
-    background-position: bottom -120px right -200px;
-  }
-
-  @include media-max(680px) {
-    background-size: 1200px;
-    background-position: bottom -100px right -140px;
-  }
-
-  @include media-max(640px) {
     background-size: 1000px;
-    background-position: bottom -80px right -75px;
+    background-position: bottom -90px right -120px;
   }
 
-  @include media-max(560px) {
+  @include media-max(580px) {
+    background-size: 864px;
+    background-position: bottom -80px right -110px;
+  }
+
+  @include media-max($mobile) {
     background-image: url('./../img/fons/main-first-screen-mobile.png');
-    background-size: 100%;
-    background-position: bottom -90px left;
-  }
-
-  @include media-max(520px) {
     background-size: 510px;
-    background-position: bottom -60px left -100px;
+    background-position: bottom -80px left -110px;
   }
 
   &__subtitle {
@@ -61,9 +51,15 @@
     }
 
     @include media-max($phablet) {
-      font-size: 13px;
-      line-height: 15px;
-      margin-bottom: 4px;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
+    @include media-max($mobile) {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 5px;
     }
   }
 
@@ -71,7 +67,7 @@
     max-width: 515px;
     font-weight: 500;
     font-size: 40px;
-    line-height: 55px;
+    line-height: 137%;
     color: $c-black;
     margin-bottom: 30px;
 
@@ -83,6 +79,12 @@
     }
 
     @include media-max($phablet) {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+
+    @include media-max($mobile) {
       font-size: 21px;
       line-height: 30px;
       margin-bottom: 10px;
@@ -103,9 +105,14 @@
     }
 
     @include media-max($phablet) {
-      font-size: 12px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    @include media-max($mobile) {
+      font-size: 14px;
       line-height: 20px;
-      max-width: 200px;
+      max-width: 220px;
     }
   }
 }

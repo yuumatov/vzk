@@ -127,6 +127,10 @@
       }
     }
 
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+
     &:hover {
       .header-nav__link {
         color: $c-blue;

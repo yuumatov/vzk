@@ -22,15 +22,37 @@
     padding-right: 10px;
   }
 
-  &__inner {
+  &__wrap {
     display: flex;
     align-items: flex-start;
+
+    @include media-max(1240px) {
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    @include media-max(959px) {
+      margin-bottom: 24px;
+    }
+
+    @include media-max($phablet) {
+      margin-bottom: 0;
+    }
   }
 
   &__img {
     margin-right: 70px;
 
-    @include media-max($tablet) {
+    @include media-max(1240px) {
+      max-width: 350px;
+      margin-right: 30px;
+    }
+
+    @include media-max(959px) {
+      max-width: 220px;
+    }
+
+    @include media-max($phablet) {
       display: none;
     }
   }
@@ -89,15 +111,19 @@
   }
 
   &__tabs {
+    margin-left: 494px;
+    margin-top: -110px;
+
+    @include media-max(1240px) {
+      margin-top: 0;
+      margin-left: 0;
+    }
+
     .ui-tabs-nav {
       padding: 0;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       margin-top: -8px;
       margin-left: -8px;
-
-      @include media-max($tablet) {
-        margin-bottom: 20px;
-      }
 
       @include media-max($phablet) {
         margin-top: -4px;

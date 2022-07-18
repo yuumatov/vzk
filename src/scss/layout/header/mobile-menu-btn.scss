@@ -1,6 +1,6 @@
 .mobile-menu-btn {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -18,8 +18,8 @@
     }
 
     span {
-        width: 42px;
-        height: 5px;
+        width: 30px;
+        height: 4px;
         border-radius: 2px;
         background-color: #D3D7DB;
         transition: all $t-base;
@@ -31,8 +31,8 @@
         }
 
         &:nth-child(2) {
-            margin-top: 8px;
-            margin-bottom: 8px;
+            margin-top: 6px;
+            margin-bottom: 6px;
 
             @include media-max($phablet) {
                 margin-top: 4px;
@@ -44,7 +44,7 @@
     &--active {
         span {
             &:first-child {
-                transform: translateY(15px) rotate(45deg);
+                transform: translateY(12px) rotate(45deg);
 
                 @include media-max($phablet) {
                     transform: translateY(7px) rotate(45deg);
@@ -56,7 +56,7 @@
             }
 
             &:last-child {
-                transform: translateY(-11px) rotate(-45deg);
+                transform: translateY(-8px) rotate(-45deg);
 
                 @include media-max($phablet) {
                     transform: translateY(-7px) rotate(-45deg);

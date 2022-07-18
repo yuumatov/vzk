@@ -12,8 +12,9 @@
         margin-bottom: 84px;
 
         @include media-max($tablet) {
-            font-size: 34px;
-            line-height: 40px;
+            font-size: 30px;
+            line-height: 36px;
+            margin-bottom: 56px;
         }
 
         @include media-max($phablet) {
@@ -35,7 +36,7 @@
         justify-content: space-around;
 
         @include media-max($tablet) {
-            justify-content: space-between;
+            
         }
 
         @include media-max($phablet) {
@@ -81,8 +82,8 @@
         margin-bottom: 37px;
 
         @include media-max($tablet) {
-            width: 208px;
-            height: 208px;
+            width: 150px;
+            height: 150px;
         }
 
         @include media-max(959px) {
@@ -111,8 +112,8 @@
         transition: color $t-base;
 
         @include media-max($tablet) {
-            font-size: 26px;
-            line-height: 30px;
+            font-size: 20px;
+            line-height: 26px;
         }
 
         @include media-max(959px) {

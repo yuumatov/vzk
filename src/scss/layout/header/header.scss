@@ -11,11 +11,6 @@
   }
 
   .logo {
-    @include media-max($tablet) {
-      width: 174px;
-      height: 55px;
-    }
-
     @include media-max($phablet) {
       width: 86px;
       height: 27px;

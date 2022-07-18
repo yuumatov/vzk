@@ -6,8 +6,11 @@
         column-gap: 27px;
 
         @include media-max($tablet) {
+            gap: 20px;
+        }
+
+        @include media-max(959px) {
             grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 32px;
         }
 
         @include media-max($phablet) {
@@ -31,7 +34,9 @@
         transition: box-shadow $t-base;
 
         @include media-max($tablet) {
-            min-height: 264px;
+            min-height: 208px;
+            border-radius: 20px;
+            padding: 20px;
         }
 
         @include media-max($phablet) {
@@ -61,12 +66,12 @@
         @include media-max($tablet) {
             width: 105px;
             height: 105px;
+            margin-bottom: 16px;
         }
 
         @include media-max($phablet) {
             width: 80px;
             height: 80px;
-            margin-bottom: 16px;
         }
 
         @include media-max($mobile) {
@@ -85,8 +90,8 @@
         transition: color $t-base;
 
         @include media-max($tablet) {
-            font-size: 22px;
-            line-height: 26px;
+            font-size: 18px;
+            line-height: 24px;
         }
 
         @include media-max($phablet) {

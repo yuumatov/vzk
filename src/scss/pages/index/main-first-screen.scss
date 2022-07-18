@@ -13,8 +13,8 @@
 
   @include media-max($tablet) {
     padding-top: 175px;
-    height: 1095px;
-    background-position: right -200px bottom -126px;
+    background-size: 1130px;
+    background-position: right -150px bottom -100px;
   }
 
   @include media-max($phablet) {
@@ -44,12 +44,6 @@
     color: $c-accent;
     margin-bottom: 16px;
 
-    @include media-max($tablet) {
-      font-size: 25px;
-      line-height: 30px;
-      margin-bottom: 10px;
-    }
-
     @include media-max($phablet) {
       font-size: 20px;
       line-height: 24px;
@@ -71,13 +65,6 @@
     color: $c-black;
     margin-bottom: 30px;
 
-    @include media-max($tablet) {
-      max-width: 610px;
-      font-size: 47px;
-      line-height: 62px;
-      margin-bottom: 16px;
-    }
-
     @include media-max($phablet) {
       font-size: 30px;
       line-height: 40px;
@@ -97,12 +84,6 @@
     font-size: 20px;
     line-height: 33px;
     color: $c-black;
-
-    @include media-max($tablet) {
-      max-width: 350px;
-      font-size: 22px;
-      line-height: 38px;
-    }
 
     @include media-max($phablet) {
       font-size: 20px;

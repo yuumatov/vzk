@@ -4,6 +4,10 @@
     margin-top: 220px;
     background-color: #F9F9FA;
 
+    @include media-max($tablet) {
+        margin-top: 160px;
+    }
+
     @include media-max($phablet) {
         margin-top: 120px;
         margin-bottom: 50px;
@@ -22,8 +26,8 @@
         margin-bottom: 50px;
 
         @include media-max($tablet) {
-            font-size: 34px;
-            line-height: 40px;
+            font-size: 30px;
+            line-height: 36px;
         }
 
         @include media-max($phablet) {

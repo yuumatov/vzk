@@ -48,9 +48,7 @@
     margin-bottom: 30px;
 
     @include media-max($tablet) {
-      font-size: 25px;
-      line-height: 30px;
-      margin-bottom: 24px;
+      
     }
 
     @include media-max($phablet) {
@@ -73,6 +71,11 @@
     color: $c-black;
     margin-bottom: 30px;
 
+    @include media-max($tablet) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
     @include media-max($phablet) {
       font-size: 20px;
       line-height: 26px;
@@ -93,7 +96,7 @@
       margin-left: -8px;
 
       @include media-max($tablet) {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
 
       @include media-max($phablet) {
@@ -120,12 +123,6 @@
     line-height: 24px;
     color: $c-black;
     margin-bottom: 20px;
-
-    @include media-max($tablet) {
-      margin-bottom: 24px;
-      font-size: 24px;
-      line-height: 40px;
-    }
 
     @include media-max($phablet) {
       font-size: 18px;
@@ -154,11 +151,6 @@
       background-color: darken(#EDEAF6, 5%);
     }
 
-    @include media-max($tablet) {
-      font-size: 20px;
-      line-height: 24px;
-    }
-
     @include media-max($phablet) {
       font-size: 16px;
       line-height: 20px;
@@ -180,11 +172,6 @@
       font-size: 20px;
       line-height: 37px;
       color: $c-black;
-
-      @include media-max($tablet) {
-        font-size: 24px;
-        line-height: 40px;
-      }
 
       @include media-max($phablet) {
         font-size: 18px;

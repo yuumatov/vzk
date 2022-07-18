@@ -55,15 +55,11 @@ body {
 
     @include media-max($tablet) {
       width: 712px;
-      bottom: 4180px;
+      bottom: 930px;
       left: -544px;
     }
 
     @include media-max($phablet) {
-      // min-width: 445px;
-      // left: -336px;
-      // bottom: 2500px;
-
       display: none;
     }
   }
@@ -75,14 +71,14 @@ body {
     @include media-max($tablet) {
       width: 675px;
       right: -436px;
-      bottom: 5500px;
+      bottom: 1650px;
+    }
+
+    @include media-max(959px) {
+      bottom: 1780px;
     }
 
     @include media-max($phablet) {
-      // min-width: 430px;
-      // right: -313px;
-      // bottom: 3300px;
-
       display: none;
     }
   }

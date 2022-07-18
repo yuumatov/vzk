@@ -41,8 +41,7 @@
         }
 
         @include media-max($tablet) {
-            padding: 70px;
-            min-height: 395px;
+            min-height: 236px;
         }
 
         @include media-max($phablet) {
@@ -74,12 +73,9 @@
                 }
 
                 @include media-max($tablet) {
-                    width: 352px;
-                    bottom: 60px;
-                }
-
-                @include media-max(959px) {
                     width: 190px;
+                    right: 0;
+                    bottom: 36px;
                 }
 
                 @include media-max($phablet) {
@@ -115,15 +111,9 @@
                 }
 
                 @include media-max($tablet) {
-                    width: 220px;
+                    width: 110px;
+                    top: -28px;
                     right: 60px;
-                    top: -60px;
-                }
-
-                @include media-max(959px) {
-                    width: 132px;
-                    top: 0px;
-                    right: 10px;
                 }
 
                 @include media-max($phablet) {
@@ -161,9 +151,7 @@
         }
 
         @include media-max($tablet) {
-            font-size: 25px;
-            line-height: 34px;
-            margin-bottom: 18px;
+            
         }
 
         @include media-max($phablet) {
@@ -195,10 +183,8 @@
         }
 
         @include media-max($tablet) {
-            max-width: 100%;
-            font-size: 24px;
-            line-height: 43px;
-            margin-right: 154px;
+            max-width: 420px;
+            margin-right: 150px;
         }
 
         @include media-max($phablet) {
